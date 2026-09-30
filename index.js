@@ -15,17 +15,7 @@ let usuarios = [
 
 // Ruta inicial
 app.get('/', (req, res) => {
-    res.json({
-    mensaje: '¡Bienvenido a la API con Express!',
-    endpoints: {
-      listarUsuarios: 'GET /api/usuarios',
-      obtenerUsuario: 'GET /api/usuarios/:id',
-      crearUsuario: 'POST /api/usuarios',
-      actualizarUsuario: 'PUT /api/usuarios/:id',
-      eliminarUsuario: 'DELETE /api/usuarios/:id'
-    }
-  });
-  //res.json({ mensaje: 'Hola Mundo' });
+  res.json({ mensaje: 'Hola Mundo desde v2' });
 });
 
 // 1. Obtener todos los usuarios (GET)
